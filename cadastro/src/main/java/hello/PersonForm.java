@@ -12,7 +12,6 @@ public class PersonForm {
     private String name;
 
     @NotNull
-    @Min(18)
     private String email;
     
     @NotNull

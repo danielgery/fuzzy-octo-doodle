@@ -8,14 +8,29 @@
                     <td th:if="${#fields.hasErrors('name')}" th:errors="*{name}">Name Error</td>
                 </tr>
                 <tr>
-                    <td>Age:</td>
-                    <td><input type="text" th:field="*{age}" /></td>
-                    <td th:if="${#fields.hasErrors('age')}" th:errors="*{age}">Age Error</td>
+                    <td>Email:</td>
+                    <td><input type="text" th:field="*{email}" /></td>
+                    <td th:if="${#fields.hasErrors('email')}" th:errors="*{email}">Age Error</td>
+                </tr>
+				<tr>
+                    <td>Tipo:</td>
+                    <td><input type="text" th:field="*{tipo}" /></td>
+                    <td th:if="${#fields.hasErrors('tipo')}" th:errors="*{tipo}">Age Error</td>
                 </tr>
                 <tr>
                     <td><button type="submit">Submit</button></td>
                 </tr>
             </table>
         </form>
-    </body>
+    
+		<ol>
+			<li> Daniel, danial@pucrs.com, Aluno</li>
+			<li> Mangan, mangan@pucrs.com, Professor</li>
+			<li> Gabriel, gabriel@pucrs.com, Aluno</li>
+			<li> Michel, michel@pucrs.com, Professor</li>
+			<li></li>
+		</ol>
+		
+	
+	</body>
 </html>
